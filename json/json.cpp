@@ -1,6 +1,6 @@
 
 #include "../include/json.hpp"
 
-int cparse_json(void) {
+int     JSON::cparse_json(std::string str) {
     return (0);
 }

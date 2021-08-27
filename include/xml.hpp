@@ -2,6 +2,15 @@
 #ifndef CPARSE_XML
 # define CPARSE_XML
 
-int cparse_xml(void);
+#include <iostream>
+#include <string>
+
+class XML {
+    private:
+        std::string filename;
+        int         error;
+    public:
+        int cparse_xml(std::string str);
+};
 
 #endif

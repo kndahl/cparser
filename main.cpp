@@ -1,9 +1,12 @@
 
-#include "../include/json.hpp"
-#include "../include/xml.hpp"
+#include "include/json.hpp"
+#include "include/xml.hpp"
+#include <iostream>
+#include <fstream>
+#include <cstdlib>
 
 int     main(void) {
-    cparse_json();
-    cparse_xml();
+    XML             xml_input;
+    xml_input.cparse_xml("samples/1.xml");
     return (0);
 }
