@@ -5,4 +5,8 @@
     <Customer>ANTON</Customer>
     <Qtr_2>$702.00</Qtr_2>
   </Source_Data>
+  <Info>
+    <Adress>Some adress</Adress>
+    <Index>121087</Index>
+  </Info>
 </root>
