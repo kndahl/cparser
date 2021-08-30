@@ -30,17 +30,19 @@
 class XML {
     private:
         std::string                         filename;
+        std::vector<std::string>            blocks;
         std::vector<std::string>            key;
         std::vector<std::string>            value;
         std::map<std::string, std::string>  dictionary;
         std::string                         input;
         int                                 error;
-    public:
-        int     cparse_xml(std::string str);
         int     parse(std::string fl);
         void    make_copy(std::string);
+        void    get_blocks(std::string str);
         void    get_values(std::string str);
         void    get_keys(std::string str);
+    public:
+        int     cparse_xml(std::string str);
 };
 
 #endif
